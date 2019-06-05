@@ -1,0 +1,38 @@
+{
+  "name": "qa_test",
+  "version": "1.0.0",
+  "description": "simple web app to test the abilities of Quality Assurance interview candidates3",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scriptmunkeeofficial/qa_test.git"
+  },
+  "keywords": [
+    "QA",
+    "QE",
+    "Interview",
+    "Quality",
+    "Assurance",
+    "Quality",
+    "Engineer",
+    "SDET"
+  ],
+  "author": "Ken Simeon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scriptmunkeeofficial/qa_test/issues"
+  },
+  "homepage": "https://github.com/scriptmunkeeofficial/qa_test#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
+    "sqlite3": "^4.0.6"
+  }
+}
