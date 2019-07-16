@@ -5,15 +5,20 @@ services:
         #image: mcr.microsoft.com/oryx/nodejs:10.13.0-alpine
         build: .
         container_name: qa-test-node
+        # TODO: figure out verbose output & debugging
+        #env_file: .env
+        #command: set DEBUG=express:* node index.js
+
+        command: ["node", "index.js"]
         depends_on: 
             - db
         ports:
-            - "80:3000"
+            - "8080:3000"
     db:
         image: mysql
         container_name: qa-test-mysql
         command: --default-authentication-plugin=mysql_native_password
-        restart: always
+        #restart: always
         environment:
             MYSQL_ROOT_PASSWORD: p@ssw0rd
 

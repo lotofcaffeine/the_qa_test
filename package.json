@@ -2,10 +2,11 @@
   "name": "qa_test",
   "version": "1.0.0",
   "description": "simple web app to test the abilities of Quality Assurance interview candidates3",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "test",
-    "start": "index.js"
+      "start": "node ./src",
+      "devstart": "nodemon ./src",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -29,10 +30,14 @@
   "homepage": "https://github.com/scriptmunkeeofficial/qa_test#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "ejs": "^2.6.1",
+    "ejs": "^2.6.2",
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
-    "sqlite3": "^4.0.8"
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "nodemon": "^1.19.1"
   }
 }

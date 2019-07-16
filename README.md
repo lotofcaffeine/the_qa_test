@@ -23,7 +23,7 @@ This platform can be used to evaluate the abilities of a potential Software Qual
 ## Starting the Platform
 1. Clone the repo
 2. CD into the local repo folder
-3. Run `docker compose`
+3. Run `docker-compose`
 4. From a browser open `https://...../`
 
 ## Base User Accounts
@@ -41,7 +41,7 @@ This platform can be used to evaluate the abilities of a potential Software Qual
 ### MySQL
 shell to `qa-test-mysql`
 
-    docker container exec -it qa-test-mysql bash
+    docker container exec -it qa-test-mysql /bin/bash
 
 connect to mysql db from mysql container
 
@@ -54,7 +54,7 @@ connect to mysql db from node server
 ### Node JS
 shell into `qa-test-node`
 
-    docker container exec -it qa-test-node bash
+    docker container exec -it qa-test-node /bin/sh
 
 
 ### VirtualBox
